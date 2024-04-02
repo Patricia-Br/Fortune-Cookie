@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+.hide{
+  display: none;
+}
+
+body{
+  font-size: 1.6rem;
+  background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+main{
+  background-color: #ffffff;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+  border-radius: .5rem;
+  width: min(42.8rem, 90%);
+  max-height: 56.4rem;
+  padding: 4.8rem 6.4rem 6.4rem;
+  text-align: center;
+}
+
+h1, h2{
+  color: #34355B;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+
+div p{
+  color: #000000;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+
+/* screen 1 */
+
+.screen1 h1{
+  margin-bottom: 1.4rem;
+}
+
+.screen1 p{
+  margin-bottom: 2.6rem;
+  
+  color: #34355B;
+  font-family: 'Dm Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.screen1 .animation{
+  background-color: #ffffff;
+  border: none;
+}
+
+.screen1 .animation:hover{
+  transition: all 1s ease-in-out;
+  filter: contrast(100%) saturate(130%);
+  
+  -webkit-animation: vibrate-1 0.3s linear infinite both;
+  animation: vibrate-1 0.3s linear infinite both;
+}
+
+
+/* screen 2 */
+
+.screen2 h2{
+  margin-bottom: 1.7rem;
+}
+
+.screen2 .animation-div{
+  width: 29.3rem;
+  max-height: 10.9rem;
+  padding: 1rem;
+  background: #E4EDF1;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+  margin-bottom: 4.3rem;
+
+  -webkit-animation: scale-in-bottom 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: scale-in-bottom 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  
+  color: #000000;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.screen2 img{
+  padding-bottom: 4.3rem;
+  margin-bottom: 1.7rem;
+}
+
+.screen2 button{
+  padding: 1.6rem;
+  background-color: #FF9500;
+  border-radius: .4rem;
+  border: none;
+  
+  color: #ffffff;
+  font-family: 'Dm Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+}
+
+.screen2 button:hover{
+  background-color: #df8910;
+  transform: scale(1.1);
+  transition: all 1s ease-in-out;
+
+}
+
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+ @-webkit-keyframes scale-in-bottom {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 1;
+  }
+}
+@keyframes scale-in-bottom {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 1;
+  }
+}
+
